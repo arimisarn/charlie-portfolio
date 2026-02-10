@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
 import { Download, ArrowDown } from 'lucide-react'
 import image from "../assets/lie.jpeg"
+
 const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { staggerChildren: 0.2, delayChildren: 0.1 } },
@@ -48,21 +49,21 @@ const Hero: React.FC = () => {
                     <motion.div variants={itemVariants} className="space-y-8">
                         <div className="space-y-4">
                             <motion.p variants={itemVariants} className="text-accent font-semibold text-lg">
-                                Welcome to my portfolio
+                                Bienvenue sur mon portfolio
                             </motion.p>
                             <h1 className="text-5xl lg:text-6xl font-bold text-foreground dark:text-gray-100 leading-tight">
                                 <motion.span variants={itemVariants} className="block">
-                                    Creative Video
+                                    Monteur Vidéo
                                 </motion.span>
                                 <motion.span
                                     variants={itemVariants}
                                     className="block bg-gradient-to-r from-accent to-blue-400 bg-clip-text text-transparent"
                                 >
-                                    Editor
+                                    Créatif
                                 </motion.span>
                             </h1>
                             <motion.p variants={itemVariants} className="text-lg text-muted-foreground dark:text-gray-300 max-w-md">
-                                Transforming ideas into compelling visual stories. Specializing in dynamic editing, color grading, and creative motion graphics.
+                                Transformer des idées en histoires visuelles captivantes. Spécialisé dans le montage dynamique, l’étalonnage des couleurs et les animations graphiques créatives.
                             </motion.p>
                         </div>
 
@@ -73,19 +74,19 @@ const Hero: React.FC = () => {
                                 className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-lg flex items-center gap-2 px-6 py-3 transition-colors"
                             >
                                 <Download className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                                Download CV
+                                Télécharger CV
                             </button>
                             <button className="rounded-lg border border-accent/50 hover:bg-secondary dark:hover:bg-gray-700 bg-transparent px-6 py-3 transition-colors text-foreground dark:text-gray-100">
-                                View Projects
+                                Voir les projets
                             </button>
                         </motion.div>
 
                         {/* Stats */}
-                        <motion.div variants={itemVariants} className="grid grid-cols-3 gap-6 pt-8">
+                        {/* <motion.div variants={itemVariants} className="grid grid-cols-3 gap-6 pt-8">
                             {[
-                                { label: 'Projects', value: '50+' },
+                                { label: 'Projets', value: '50+' },
                                 { label: 'Clients', value: '30+' },
-                                { label: 'Experience', value: '3+ yrs' },
+                                { label: 'Expérience', value: '3+ ans' },
                             ].map((stat, i) => (
                                 <motion.div
                                     key={i}
@@ -96,7 +97,7 @@ const Hero: React.FC = () => {
                                     <p className="text-sm text-muted-foreground dark:text-gray-300">{stat.label}</p>
                                 </motion.div>
                             ))}
-                        </motion.div>
+                        </motion.div> */}
                     </motion.div>
 
                     {/* Right Image */}
@@ -109,7 +110,7 @@ const Hero: React.FC = () => {
                             <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-secondary/20 rounded-2xl blur-2xl dark:from-accent/10 dark:to-secondary/30" />
                             <img
                                 src={image}
-                                alt="Video Editor Portrait"
+                                alt="Portrait du monteur vidéo"
                                 className="object-cover rounded-2xl shadow-2xl w-full h-full"
                             />
                         </motion.div>
