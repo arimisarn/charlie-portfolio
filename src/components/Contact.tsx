@@ -104,19 +104,19 @@ const Contact: React.FC = () => {
                                 {
                                     icon: Mail,
                                     label: 'Email',
-                                    value: 'hello@videoeditor.com',
-                                    href: 'mailto:hello@videoeditor.com',
+                                    value: 'charlierandriamaro15@gmail.com',
+                                    href: 'mailto:Charlierandriamaro15@gmail.com',
                                 },
                                 {
                                     icon: Phone,
                                     label: 'Phone',
-                                    value: '+1 (555) 123-4567',
+                                    value: '+261 33 67 670 96',
                                     href: 'tel:+15551234567',
                                 },
                                 {
                                     icon: MapPin,
                                     label: 'Location',
-                                    value: 'New York, USA',
+                                    value: 'Antananarivo, Madagascar',
                                     href: '#',
                                 },
                             ].map((contact, i) => {
